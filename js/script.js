@@ -9,38 +9,28 @@ Si può fare? Certo che si basta ragionare un po’.
 Nota: 
 Non è necessario provvedere alla validazione delle email */
 
-
-
-
 const invitedList = [
     'Rosa.Maligna@gmail.com',
     'Tre.Biscotti@gmail.com',
     'Nba.Giovaneuomo@gmail.com'
-]
-let userEmail = 'tre.biscotti@gmail.com'
-// prompt("Inserisci la tua e-mail") 
-for (let i = 0; i < invitedList.length; i++){
+];
+
+let userEmail = prompt("Inserisci la tua email");
+let emailCheck = false;
+
+for (let i = 0; i < invitedList.length; i++) {
     if (userEmail === invitedList[i]) {
-        alert("You are invited")
-        break;
-    }else {
-        alert("You are not invited")
-        break;
+        emailCheck = true;
     }
-    
 }
+console.log(emailCheck);
 
-// let inviteChecker;
-
-
-
-
-
-
-
-
-
-
+if(emailCheck){
+    alert("Sei invitato");
+}
+else {
+    alert("Non sei invitato");
+}
 
 /*
 Gioco dei dadi
