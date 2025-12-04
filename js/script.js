@@ -12,7 +12,18 @@ Non è necessario provvedere alla validazione delle email */
 
 
 
+const invitedFriends = [
+    'Rosa.Maligna@gmail.com',
+    'Tre.Biscotti@gmail.com',
+    'Nba.Giovaneuomo@gmail.com'
+]
+let emailChecker = prompt("Inserisci la tua e-mail")
 
+
+for (let i = 0; i < invitedFriends.length; i++){
+    if(emailChecker === invitedFriends[i])
+        alert("You are invited")
+}
 
 
 
