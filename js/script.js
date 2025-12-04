@@ -12,18 +12,25 @@ Non è necessario provvedere alla validazione delle email */
 
 
 
-const invitedFriends = [
+const invitedList = [
     'Rosa.Maligna@gmail.com',
     'Tre.Biscotti@gmail.com',
     'Nba.Giovaneuomo@gmail.com'
 ]
-let emailChecker = prompt("Inserisci la tua e-mail")
-
-
-for (let i = 0; i < invitedFriends.length; i++){
-    if(emailChecker === invitedFriends[i])
+let userEmail = 'tre.biscotti@gmail.com'
+// prompt("Inserisci la tua e-mail") 
+for (let i = 0; i < invitedList.length; i++){
+    if (userEmail === invitedList[i]) {
         alert("You are invited")
+        break;
+    }else {
+        alert("You are not invited")
+        break;
+    }
+    
 }
+
+// let inviteChecker;
 
 
 
